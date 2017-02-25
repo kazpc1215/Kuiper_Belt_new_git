@@ -48,36 +48,36 @@ NEP_RESO54 = (5.0/4.0)**(2.0/3.0)*NEP_AXIS
 
 
 
-set arrow 1 from NEP_RESO21,0 to NEP_RESO21,30 nohead dt 2 lw 2 lc rgb "gray50"
-set arrow 2 from NEP_RESO32,0 to NEP_RESO32,30 nohead dt 2 lw 2 lc rgb "gray50"
-set arrow 3 from NEP_RESO43,0 to NEP_RESO43,30 nohead dt 2 lw 2 lc rgb "gray50"
-set arrow 4 from NEP_RESO54,0 to NEP_RESO54,30 nohead dt 2 lw 2 lc rgb "gray50"
+set arrow 1 from NEP_RESO21,0 to NEP_RESO21,25 nohead dt 2 lw 2 lc rgb "gray50"
+set arrow 2 from NEP_RESO32,0 to NEP_RESO32,25 nohead dt 2 lw 2 lc rgb "gray50"
+set arrow 3 from NEP_RESO43,0 to NEP_RESO43,25 nohead dt 2 lw 2 lc rgb "gray50"
+set arrow 4 from NEP_RESO54,0 to NEP_RESO54,25 nohead dt 2 lw 2 lc rgb "gray50"
 
-set arrow 5 from NU5,0 to NU5,35 nohead dt 4 lw 2 lc rgb "gray50"
-set arrow 6 from NU6,0 to NU6,35 nohead dt 4 lw 2 lc rgb "gray50"
-set arrow 7 from NU7,0 to NU7,35 nohead dt 4 lw 2 lc rgb "gray50"
-set arrow 8 from NU8,0 to NU8,35 nohead dt 4 lw 2 lc rgb "gray50"
-#set arrow 9 from NU15,0 to NU15,35 nohead dt 4 lw 2 lc rgb "gray50"
-#set arrow 10 from NU16,0 to NU16,35 nohead dt 4 lw 2 lc rgb "gray50"
-#set arrow 11 from NU17,0 to NU17,35 nohead dt 4 lw 2 lc rgb "gray50"
-#set arrow 12 from NU18,0 to NU18,35 nohead dt 4 lw 2 lc rgb "gray50"
-
-
+set arrow 5 from NU5,0 to NU5,30 nohead dt 4 lw 2 lc rgb "gray50"
+set arrow 6 from NU6,0 to NU6,30 nohead dt 4 lw 2 lc rgb "gray50"
+set arrow 7 from NU7,0 to NU7,30 nohead dt 4 lw 2 lc rgb "gray50"
+set arrow 8 from NU8,0 to NU8,30 nohead dt 4 lw 2 lc rgb "gray50"
+set arrow 9 from NU15,0 to NU15,35 nohead dt 4 lw 2 lc rgb "gray50"
+set arrow 10 from NU16,0 to NU16,35 nohead dt 4 lw 2 lc rgb "gray50"
+set arrow 11 from NU17,0 to NU17,35 nohead dt 4 lw 2 lc rgb "gray50"
+set arrow 12 from NU18,0 to NU18,35 nohead dt 4 lw 2 lc rgb "gray50"
 
 
-set label "2:1" center at NEP_RESO21,30.5 font "Times-Roman,25"
-set label "3:2" center at NEP_RESO32,32 font "Times-Roman,25"
-set label "4:3" center at NEP_RESO43,30.5 font "Times-Roman,25"
-set label "5:4" center at NEP_RESO54,32 font "Times-Roman,25"
 
-set label "{/Symbol n}_5" center at NU5,36 font "Times-Roman,25"
-set label "{/Symbol n}_6" center at NU6,37.5 font "Times-Roman,25"
-set label "{/Symbol n}_7" center at NU7,37.5 font "Times-Roman,25"
-set label "{/Symbol n}_8" center at NU8,36 font "Times-Roman,25"
-#set label "{/Symbol n}_{15}" center at NU15,36 font "Times-Roman,25"
-#set label "{/Symbol n}_{16}" center at NU16,36 font "Times-Roman,25"
-#set label "{/Symbol n}_{17}" center at NU17,36 font "Times-Roman,25"
-#set label "{/Symbol n}_{18}" center at NU18,36 font "Times-Roman,25"
+
+set label "2:1" center at NEP_RESO21,25.5 font "Times-Roman,25"
+set label "3:2" center at NEP_RESO32,27 font "Times-Roman,25"
+set label "4:3" center at NEP_RESO43,25.5 font "Times-Roman,25"
+set label "5:4" center at NEP_RESO54,27 font "Times-Roman,25"
+
+set label "{/Symbol n}_5" center at NU5,31 font "Times-Roman,25"
+set label "{/Symbol n}_6" center at NU6,32.5 font "Times-Roman,25"
+set label "{/Symbol n}_7" center at NU7,32.5 font "Times-Roman,25"
+set label "{/Symbol n}_8" center at NU8,31 font "Times-Roman,25"
+set label "{/Symbol n}_{15}" center at NU15,36 font "Times-Roman,25"
+set label "{/Symbol n}_{16}" center at NU16,36 font "Times-Roman,25"
+set label "{/Symbol n}_{17}" center at NU17,36 font "Times-Roman,25"
+set label "{/Symbol n}_{18}" center at NU18,36 font "Times-Roman,25"
 
 if (n == 8){
 set title sprintf("Time %.3f [Myr], Total 368",TIME)
