@@ -15,7 +15,7 @@ set yl offset -1,0
 
 n = 2
 j = 0
-while (n<=2){
+while (n<=7){
 unset label
 unset arrow
 
@@ -75,14 +75,14 @@ set arrow 2 from NEP_RESO32,0 to NEP_RESO32,0.4 nohead dt 2 lw 2 lc rgb "gray50"
 set arrow 3 from NEP_RESO43,0 to NEP_RESO43,0.4 nohead dt 2 lw 2 lc rgb "gray50"
 set arrow 4 from NEP_RESO54,0 to NEP_RESO54,0.4 nohead dt 2 lw 2 lc rgb "gray50"
 
-#set arrow 5 from NU5,0 to NU5,0.45 nohead dt 4 lw 2 lc rgb "gray50"
-#set arrow 6 from NU6,0 to NU6,0.45 nohead dt 4 lw 2 lc rgb "gray50"
-#set arrow 7 from NU7,0 to NU7,0.45 nohead dt 4 lw 2 lc rgb "gray50"
-#set arrow 8 from NU8,0 to NU8,0.45 nohead dt 4 lw 2 lc rgb "gray50"
-set arrow 9 from NU15,0 to NU15,0.45 nohead dt 4 lw 2 lc rgb "gray50"
-set arrow 10 from NU16,0 to NU16,0.45 nohead dt 4 lw 2 lc rgb "gray50"
-set arrow 11 from NU17,0 to NU17,0.45 nohead dt 4 lw 2 lc rgb "gray50"
-set arrow 12 from NU18,0 to NU18,0.45 nohead dt 4 lw 2 lc rgb "gray50"
+set arrow 5 from NU5,0 to NU5,0.45 nohead dt 4 lw 2 lc rgb "gray50"
+set arrow 6 from NU6,0 to NU6,0.45 nohead dt 4 lw 2 lc rgb "gray50"
+set arrow 7 from NU7,0 to NU7,0.45 nohead dt 4 lw 2 lc rgb "gray50"
+set arrow 8 from NU8,0 to NU8,0.45 nohead dt 4 lw 2 lc rgb "gray50"
+#set arrow 9 from NU15,0 to NU15,0.45 nohead dt 4 lw 2 lc rgb "gray50"
+#set arrow 10 from NU16,0 to NU16,0.45 nohead dt 4 lw 2 lc rgb "gray50"
+#set arrow 11 from NU17,0 to NU17,0.45 nohead dt 4 lw 2 lc rgb "gray50"
+#set arrow 12 from NU18,0 to NU18,0.45 nohead dt 4 lw 2 lc rgb "gray50"
 
 
 set label "2:1" center at NEP_RESO21,0.41 font "Times-Roman,25"
@@ -90,19 +90,19 @@ set label "3:2" center at NEP_RESO32,0.43 font "Times-Roman,25"
 set label "4:3" center at NEP_RESO43,0.41 font "Times-Roman,25"
 set label "5:4" center at NEP_RESO54,0.43 font "Times-Roman,25"
 
-#set label "{/Symbol n}_5" center at NU5,0.47 font "Times-Roman,25"
-#set label "{/Symbol n}_6" center at NU6,0.49 font "Times-Roman,25"
-#set label "{/Symbol n}_7" center at NU7,0.49 font "Times-Roman,25"
-#set label "{/Symbol n}_8" center at NU8,0.47 font "Times-Roman,25"
-set label "{/Symbol n}_{15}" center at NU15,0.47 font "Times-Roman,25"
-set label "{/Symbol n}_{16}" center at NU16,0.47 font "Times-Roman,25"
-set label "{/Symbol n}_{17}" center at NU17,0.47 font "Times-Roman,25"
-set label "{/Symbol n}_{18}" center at NU18,0.47 font "Times-Roman,25"
+set label "{/Symbol n}_5" center at NU5,0.47 font "Times-Roman,25"
+set label "{/Symbol n}_6" center at NU6,0.49 font "Times-Roman,25"
+set label "{/Symbol n}_7" center at NU7,0.49 font "Times-Roman,25"
+set label "{/Symbol n}_8" center at NU8,0.47 font "Times-Roman,25"
+#set label "{/Symbol n}_{15}" center at NU15,0.47 font "Times-Roman,25"
+#set label "{/Symbol n}_{16}" center at NU16,0.47 font "Times-Roman,25"
+#set label "{/Symbol n}_{17}" center at NU17,0.47 font "Times-Roman,25"
+#set label "{/Symbol n}_{18}" center at NU18,0.47 font "Times-Roman,25"
 
 set xr [20:70]
 set yr [0:0.5]
 
-#plot for [i=1:100] sprintf("./N100_1/test_particle%03d.dat",i) every ::j::j u 3:2 w p pt 5 lc rgb "black",\
+plot for [i=1:100] sprintf("./N100_1/test_particle%03d.dat",i) every ::j::j u 3:2 w p pt 5 lc rgb "black",\
 for [i=1:100] sprintf("./N100_2/test_particle%03d.dat",i) every ::j::j u 3:2 w p pt 5 lc rgb "black",\
 for [i=1:100] sprintf("./N100_3/test_particle%03d.dat",i) every ::j::j u 3:2 w p pt 5 lc rgb "black",\
 for [i=1:100] sprintf("./N100_4/test_particle%03d.dat",i) every ::j::j u 3:2 w p pt 5 lc rgb "black",\
@@ -119,8 +119,8 @@ for [i=1:100] sprintf("./N100_10/test_particle%03d.dat",i) every ::j::j u 3:2 w 
 1.0 - NEP_AXIS/x lt 4 dt 2
 #"Jacobi_contour_NEP" u 1:2 w l dt 2 lt 4 lw 2
 
-set yl "inc[rad]"
-plot for [i=1:100] sprintf("./N100_1/test_particle%03d.dat",i) every ::j::j u 3:5 w p pt 5 lc rgb "black",\
+#set yl "inc[rad]"
+#plot for [i=1:100] sprintf("./N100_1/test_particle%03d.dat",i) every ::j::j u 3:5 w p pt 5 lc rgb "black",\
 for [i=1:100] sprintf("./N100_2/test_particle%03d.dat",i) every ::j::j u 3:5 w p pt 5 lc rgb "black",\
 for [i=1:100] sprintf("./N100_3/test_particle%03d.dat",i) every ::j::j u 3:5 w p pt 5 lc rgb "black",\
 for [i=1:100] sprintf("./N100_4/test_particle%03d.dat",i) every ::j::j u 3:5 w p pt 5 lc rgb "black",\
